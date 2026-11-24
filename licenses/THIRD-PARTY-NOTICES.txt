@@ -1,0 +1,21 @@
+THIRD-PARTY NOTICES (photo-prep update, personal trial)
+
+1) MI-GAN model weights (ai/migan-part0 + ai/migan-part1 = migan_pipeline_v2.onnx concatenated)
+   Source: https://huggingface.co/andraniksargsyan/migan  (model card: License: mit)
+   Licence text: licenses/MI-GAN-LICENSE-WEIGHTS.txt (MIT, Copyright (c) 2024 Picsart AI Research (PAIR));
+   same text as https://raw.githubusercontent.com/Picsart-AI-Research/MI-GAN/main/LICENSE-WEIGHTS
+   Maintainer statement (https://github.com/Picsart-AI-Research/MI-GAN/issues/25, 2026-09-14): code and all weights incl.
+   migan_pipeline_v2.onnx are released under that MIT licence.
+   OPEN QUESTION, not resolved: the model was distilled from a Co-Mod-GAN teacher whose licence (NVIDIA Source Code
+   License-NC) may require non-commercial terms to carry into derivatives. The maintainer declined to answer and advised a
+   lawyer. This has not been settled for any use, personal or public, and has not been settled for commercial use.
+
+2) ONNX Runtime Web 1.31.1 (ai/ort.wasm.min.js, ai/ort-wasm-simd-threaded.mjs, ai/ort-wasm-simd-threaded.wasm)
+   Copyright (c) Microsoft Corporation. MIT License. Full notice: licenses/onnxruntime-LICENSE-MIT.txt, taken from the
+   official repository at tag v1.31.1 (https://github.com/microsoft/onnxruntime/tree/v1.31.1; fetched via
+   https://cdn.jsdelivr.net/gh/microsoft/onnxruntime@v1.31.1/LICENSE). The npm package onnxruntime-web 1.31.1 that the
+   files came from does not ship a LICENSE file; its package.json says MIT and the ort.wasm.min.js header says
+   "Copyright (c) Microsoft Corporation... Licensed under the MIT License".
+   Third-party components notices for the same tag: licenses/onnxruntime-ThirdPartyNotices.txt.
+
+3) libheif-js (ai/libheif-bundle.js): LGPL-3.0, see LIBHEIF-LICENSE.txt.
